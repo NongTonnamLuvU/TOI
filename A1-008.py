@@ -1,5 +1,6 @@
-x = int(input())
-if len(str(abs(x))) == 13:
-    print("yes")
-else:
-    print("no")
+x = input()
+if x.isdigit():
+    if len(x) == 13:
+        print("yes")
+    else:
+        print("no")
