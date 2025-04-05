@@ -9,23 +9,19 @@ a, l = x[0], x[1]
 c, v = y[0], y[1]  
 
 
-if not x[1].isdigit() or not y[1].isdigit() or len(l) != 5 or len(v) != 5 or len(a) != 1 or len(c) != 1:
-    exit(1)
-
 if x == y:
-    print("1000000") 
-elif a == c:
-    if l[3:] == v[3:]:
-        print("1000")  
-    elif l[2:] == v[2:]:
-        print("2000")  
-    else:
-        print("20") 
+    print(1000000)
 elif l == v:
-    print("100000")  
-elif l[3:] == v[3:]:
-    print("100") 
-elif l[2:] == v[2:]:
-    print("200") 
+    print(100000) 
+elif a == c and v[-3:] == l[-3:]:
+    print(2000)  
+elif a == c and v[-2:] == l[-2:]:
+    print(1000) 
+elif v[-3:] == l[-3:]:
+    print(200) 
+elif v[-2:] == l[-2:]:
+    print(100)  
+elif a == c:
+    print(20) 
 else:
-    print("0")
+    print(0)  
