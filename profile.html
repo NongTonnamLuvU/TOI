@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Header Styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        nav {
+        background-color: #333;
+        padding: 10px 0;
+        position: sticky; 
+        top: 0; 
+        z-index: 1000; 
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            text-decoration: underline;
+            transition: background-color 0.2s ease;
+        }
+
+        main {
+            text-align: center; 
+            padding: 50px;
+        }
+
+        main p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        main img {
+            max-width: 100%; 
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        main img:hover {
+            transform: scale(1.1); 
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello, {{ username }}</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/profile/ton">Profile</a></li>
+            <li><a href="/contract">Contract</a></li>
+        </ul>
+    </nav>
+
+
+</body>
+</html>

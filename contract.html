@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About -|- Flask Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            text-decoration: underline;
+            transition: background-color 0.2s ease;
+        }
+
+        main {
+            text-align: center;
+            padding: 50px;
+        }
+
+        main p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        /* Content Box */
+        .content-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .content-box img {
+            max-width: 40%; /* Adjust the image size */
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .content-box .text {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .content-box .text p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .content-box .buttons {
+            margin-top: 20px;
+        }
+
+        .content-box .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1em;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .content-box .buttons a:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/profile/ton">Profile</a></li>
+            <li><a href="/contract">Contract</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content-box">
+            <!-- Left side: Image -->
+            <img src="https://static.wikia.nocookie.net/nicos-nextbots-fanmade/images/c/c9/SpinningFloppa.gif/revision/latest?cb=20240223021846" alt="Placeholder Image">
+
+            <!-- Right side: Text and Buttons -->
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
+                <div class="buttons">
+                    <a href="/contract">View Contract 1</a>
+                    <a href="/contract">View Contract 2</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

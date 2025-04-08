@@ -1,0 +1,64 @@
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+/* Hover effect on links */
+nav ul li a:hover {
+    background-color: #555;
+    text-decoration: underline;
+    transition: background-color 0.2s ease;
+}
+
+/* Main content styling */
+main {
+    text-align: center; /* Center the content */
+    padding: 50px;
+}
+
+main p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+main img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+/* Hover effect for image */
+main img:hover {
+    transform: scale(1.1); /* Slightly increase the size when hovered */
+}
