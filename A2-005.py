@@ -1,20 +1,21 @@
 def main():
-    w, h = map(int, input().split())
-    m, n = map(int, input().split())
+    W, H, M, N = map(int, input().split())
+    x_cuts = list(map(int, input().split()))
+    y_cuts = list(map(int, input().split()))
 
-    x = [0] + list(map(int, input().split())) + [w]
-    y = [0] + list(map(int, input().split())) + [h]
+    x_positions = [0] + x_cuts + [W]
+    y_positions = [0] + y_cuts + [H]
 
-    widths = [x[i+1] - x[i] for i in range(m + 1)]
-    heights = [y[i+1] - y[i] for i in range(n + 1)]
+    widths = [x_positions[i+1] - x_positions[i] for i in range(len(x_positions) - 1)]
+    heights = [y_positions[i+1] - y_positions[i] for i in range(len(y_positions) - 1)]
 
-    areas = [width * height for width in widths for height in heights]
+    areas = [w * h for w in widths for h in heights]
     areas.sort(reverse=True)
 
-    largest = areas[0]
-    second_largest = areas[1] if len(areas) > 1 else largest
+    max1 = areas[0]
+    max2 = areas[1] if len(areas) > 1 else max1
 
-    print(largest, second_largest)
+    print(max1, max2)
 
 if __name__ == "__main__":
     main()
